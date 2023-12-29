@@ -1,0 +1,175 @@
+<html>
+<title>form</title>
+
+<head>
+
+</head>
+
+<body>
+    <h1><i><b><u>
+                    <center>JOB APPLICATION FORM<sup>2023</sup></center>
+                </u></b></i> </h1>
+    <h3>
+        <center>PLEASE FILL OUT THE FORM BELOW TO SUBMIT OUR JOB APPLICATION</center>
+    </h3>
+    <p align="left"><u>this form is valid till 30/11/2023</u></p>
+    <hr>
+    <form>
+        <center>
+            <fieldset>
+                <legend>1st info</legend> <label>
+                    <big> FIRST NAME:</big>
+                    <input type="text" placeholder=" only first name" name="Fname" id="fname" required><sub>first
+                        name</sub>
+                </label>
+                <label><big> LAST NAME:</big>
+                    <input type="text" placeholder="only last name" name="Lname" id="lname" required><sub>last
+                        name</sub>
+                </label><br><br>
+                <label>
+                    <big> Email Id:</big>
+                    <input type="text" name="id" placeholder=" enter a valid email id" id="email"
+                        required><sub>example@gmail.com</sub>
+                </label>
+                <label><big>Email Id Password:</big>
+                    <input type="password" required type="number" id="pwd" name="password">
+                </label><br><br>
+                <label> <big> Phone Number:</big>
+                    <input type="number" name="pno" placeholder="enter a ten digit number" id="pno"
+                        required><sub>example:987****674</sub>
+                </label><br><br>
+                <label> <big>Date Of Birth:</big>
+                    <input type="date" name="dob" id="date" placeholder="DD-MM-YYYY" required>
+                </label>
+            </fieldset><br><br>
+            <label><big>year of passing graduation</big>
+                <select id="year">
+                    <option value="before">before 2018</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </label>
+            <fieldset>
+                <legend>2nd info</legend>
+                <label>you have matered in:<br>
+                    <input class="master" value="web" type="checkbox" checked="checked">HTML,CSS,Javascript
+                    <br>
+                    <input class="master" value="c" type="checkbox">C
+                    <br>
+                    <input class="master" value="c++" type="checkbox">C++
+                    <br>
+                    <input class="master" value="python" type="checkbox">Python
+                    <br>
+                    <input class="master" value="java" type="checkbox">Java
+                    <br>
+                </label>
+                <label>
+
+                    <big> Applied Position:</big>
+                    <input type="text" id="position" name="examlpe" placeholder=" post you want"
+                        required><sub>example:fullstack developer</sub>
+
+                </label><br><br>
+
+                <label id="1st">
+                    <input value="fullstack web developer" type="radio" value="fullatack web developer"><big>fullstack
+                        Web Developer</big>
+                    <br>
+                    <input class="pro" value="BackEnd Developer" type="radio" value="BackEnd developer"><big>BackEnd
+                        Developer</big>
+                    <br>
+                    <input class="pro" value="FrontEnd Developer" type="radio" value="FrontEnd Developer"><big>FrontEnd
+                        Developer</big>
+                    <br>
+                    <input class="pro" value="helper" type="radio" value="Assistant"><big> Assistant</big>
+                    <br>
+                </label><br>
+
+                <Label>
+                    <big> Cover Letter:</big>
+
+                    <textarea name="cover-letter" id="textarea" cols="30" rows="10"></textarea><br>
+                    <small><i>please do not exceed 100 words</i></small><br><br>
+                </Label>
+                <Label>
+                    <big>Upload Resume:</big>
+                    <input id="resume" name="resume" type="file" cols="100" rows="100" placeholder="UPLOAD A FILE"
+                        required><br>
+                    <small><i>drag and drop file here.</i></small><br><br>
+                </Label>
+
+                <Label>
+                    <big> Any Other Doccument To Upload:</big>
+                    <input id="doc" value="document" type="file" cols="100" rows="100" required><br>
+                    <small><i>you can share certificate,diploma etc.</i></small><br><br>
+                </Label>
+            </fieldset>
+            <label>
+                <big> mode of payment for examination form :</big><br>
+                <input class="pay" value="UPI" class="2nd" type="radio"><big>UPI</big>
+                <br>
+                <input class="pay" value="Net Banking" class="2nd" type="radio" value="Net Banking"><big> Net
+                    Banking</big>
+                <br>
+                <input class="pay" value="credit card" class="2nd" type="radio" value="credit card"><big>credit
+                    card</big>
+                <br>
+                <input class="pay" value="debit card" class="2nd" type="radio" value="debit card"><big>debit card</big>
+                <br>
+                <input class="pay" value="cash" class="2nd" disabled="" value="cash"><big>Cash </big> (not avilable)
+                <br><br>
+
+            </label>
+
+            <label>
+                <input type="button" value="submit" onclick="info()">
+
+            </label>
+
+
+        </center>
+
+    </form>
+    <script>
+
+        function info() {
+            const a = document.getElementById("fname")
+            const b = document.getElementById("lname")
+            const c = document.getElementById("email")
+            const d = document.getElementById("pwd")
+            const e = document.getElementById("pno")
+            const f = document.getElementById("date")
+            const g = document.getElementById("year")
+            const h = document.getElementById("position")
+            const p = document.getElementById("textarea")
+            const i = document.getElementById("resume")
+            const j = document.getElementById("doc")
+            const k = document.querySelectorAll(".pay")
+            const l = document.querySelectorAll(".master")
+            const m = document.querySelectorAll(".pro")
+
+            document.write("<b>The first name :"+a.value+"<br>")
+            document.write("The last name :"+b.value+"<br>")
+            document.write("The Email is"+c.value+"<br>")
+            document.write("The want want to send his email id password which is :"+d.value+"<br>")
+            document.write("The phone number :"+e.value+"<br>")
+            document.write("The date of birth is:"+f.value+"<br>")
+            document.write("The year of pasing graduation is:"+g.value+"<br>")
+            document.write("The position for appied"+h.value+"<br>")
+            document.write("the text added: "+p.value+"<br>")
+
+            document.write("The resume is:"+i.value+"<br>")
+            document.write("The other document:"+j.value+"<br>")
+            document.write("Payment method"+k.value+"<br>")
+            document.write("Mastered in"+l.value+"<br>")
+            document.write("Profession"+m.value+"<br></b>")
+
+        }
+    </script>
+</body>
+
+</html>
